@@ -11,7 +11,7 @@ public class Empty {
         }
     }
 
-    
+
 //add
     static void insAtanyPos(int pos, int data) {
 
@@ -43,6 +43,12 @@ public class Empty {
         insAtanyPos(3, 8);
         System.out.println("printing new values");
         for (int i = 0; i < n; i++) {
+            System.out.println(a[i]);
+
+        }
+        System.out.println("removing data ");
+        RemoveAtAnyPos(3);
+        for(int i=0; i<n ; i++){
             System.out.println(a[i]);
         }
 
