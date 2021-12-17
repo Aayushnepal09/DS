@@ -1,6 +1,7 @@
 package Arraytype;
 
 public class LinklistTest {
+    int size=0;
     public static class Node{
         int data;
         Node next;
@@ -17,6 +18,7 @@ public class LinklistTest {
 
 
     public void addNode(int data){
+        size++;
         Node newnode=new Node((data));
         if (head==null){
             Node current=head;
@@ -46,6 +48,20 @@ public class LinklistTest {
             current=current.next;
 
         }
+
+
+    }
+    public int getDataAtPos(int i) {
+       if(i<size){
+           Node current = head;//j=0
+           for(int j=1; j<i;j++){
+               current=current.next;
+           }
+
+         return current.data;
+           }
+           return -9999;
+
+       }
     }
 
-}

@@ -36,6 +36,7 @@ public class Array {
             System.out.println(x[i]);
         }
 
+
     }
 }
 
