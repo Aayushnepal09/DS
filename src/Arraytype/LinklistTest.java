@@ -63,5 +63,16 @@ public class LinklistTest {
            return -9999;
 
        }
+
+    public void remove(int i) {
+        Node current = head;//j=0
+        for(int j=1;    j<i-1;  j++){
+            current=current.next.next;
+
+        }
+        current.next=current.next.next;
+
+
     }
+}
 
