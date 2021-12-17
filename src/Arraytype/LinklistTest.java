@@ -12,21 +12,40 @@ public class LinklistTest {
         }
     }
     Node head=null;
+    Node tail=null;
+
+
 
     public void addNode(int data){
         Node newnode=new Node((data));
         if (head==null){
             Node current=head;
             head=newnode;
+            tail=head;
 
 
         }
-        else{
-            Node current=head;
-            while(current.next!=null){
-                current=current.next;
 
-            }
+        else{
+            tail.next=newnode;
+            tail=newnode;
+            
+//            Node current=head;
+//            while(current.next!=null){
+//                current=current.next;
+//
+//            }
+//            current.next=newnode ;
+
         }
     }
+    public void pointList(){
+        Node current=head;
+        while (current!=null){
+            System.out.println(current.data);
+            current=current.next;
+
+        }
+    }
+
 }
