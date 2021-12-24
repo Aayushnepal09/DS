@@ -1,4 +1,4 @@
-package Arraytype;
+package Linklist;
 
 public class LinklistTest {
     int size=0;

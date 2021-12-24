@@ -1,4 +1,6 @@
-package Arraytype;
+package Linklist;
+
+import Linklist.LinklistTest;
 
 public class Trylinklist {
     public static void main(String[] args) {
