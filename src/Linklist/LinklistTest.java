@@ -31,7 +31,7 @@ public class LinklistTest {
         else{
             tail.next=newnode;
             tail=newnode;
-            
+
 //            Node current=head;
 //            while(current.next!=null){
 //                current=current.next;
@@ -63,6 +63,9 @@ public class LinklistTest {
            return -9999;
 
        }
+       public int getSize(){
+        return size;
+       }
 
     public void remove(int i) {
         Node current = head;//j=0
@@ -71,6 +74,7 @@ public class LinklistTest {
 
         }
         current.next=current.next.next;
+        size--;
 
 
     }

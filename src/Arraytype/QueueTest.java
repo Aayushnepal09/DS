@@ -9,7 +9,7 @@ public class QueueTest {
 
     public void enqueue(int data){
         if(isFull()){
-            System.out.println("quwuw is over flow ");
+            System.out.println("queue is over flow ");
         }
         else {
             if(isEmpty()){
